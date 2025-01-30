@@ -43,9 +43,9 @@ public class Fraction {
          // Fraction *frac = [[Fraction alloc] init];
          Fraction frac = new Fraction();
          if (args.length != 0) {
-            frac.setNumerator(args[0]);
+            frac.setNumerator(Integer.parseInt(args[0]));
             if (args.length != 1) {
-               frac.setDenominator(args[1]);
+               frac.setDenominator(Integer.parseInt(args[1]));
             }
             else {frac.setDenominator(3);}
          }
